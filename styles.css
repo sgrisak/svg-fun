@@ -1,0 +1,31 @@
+.wrapper {
+    max-width:800px;
+    width:800px;
+  }
+  
+  .example-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    width: 800px;
+  }
+  
+  svg {
+    margin-top: 40px;
+  }
+  
+  .svg-box {
+    display: flex;
+    flex-direction: column;
+    width:190px;
+  }
+  
+  .lights {
+    fill: none;
+    stroke: #5f4c6c;
+    stroke-width: 2;
+  }
+  
+  .lights #button {
+    cursor: pointer;
+  }
