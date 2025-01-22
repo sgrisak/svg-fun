@@ -4,99 +4,172 @@
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]>      <html class="no-js"> <![endif]-->
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="styles.css">
-    </head>
-    <body>
-        <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-        <div class="wrapper">
-            <h1>Trying to keep track of SVG sizing</h1>
-            <p>Width and height are setting the size. The viewbox is setting the starting point and the units. CX and CY are the center points of the circle (in units) and R is the radius (in units).</p>
-            <div class="example-container">
-              <div class="svg-box">
-            <svg width="50" height="50" viewBox="0 0 100 100" style="border: 1px solid black">
-              <circle cx="50"cy="50" r="25" fill="red" />
-            </svg>
-            <p>Width: 50px<br />Height: 50px<br />VBox: 0 0 100 100<br />Cx: 50<br />Yx: 50<br />R: 25</p>
-              </div>
-              <div class="svg-box">
-            <svg width="100" height="100" viewBox="0 0 100 100" style="border: 1px solid black">
-              <circle cx="50"cy="50" r="25" fill="red" />
-            </svg>
-            <p>Width: 100px<br />Height: 100px<br />VBox: 0 0 100 100<br />Cx: 50<br />Yx: 50<br />R: 25</p>
-                </div>
-              <div class="svg-box">
-            <svg width="100" height="100" viewBox="0 0 50 50" style="border: 1px solid black">
-              <circle cx="50"cy="50" r="25" fill="red" />
-            </svg>
-            <p>Width: 100px<br />Height: 100px<br />VBox: 0 0 50 50<br />Cx: 50<br />Yx: 50<br />R: 25</p>
-                </div>
-              <div class="svg-box">
-            <svg width="100" height="100" viewBox="25 25 50 50" style="border: 1px solid black">
-              <circle cx="50"cy="50" r="25" fill="red" />
-            </svg>
-            <p>Width: 100px<br />Height: 100px<br />VBox: 25 25 50 50<br />Cx: 50<br />Yx: 50<br />R: 25</p>
-                </div>
-              <p>The following are borrowed from <a href="https://codepen.io/HunorMarton/pen/PoGbgqj">Hunor Marton Borbely</a> to help understand SVG shapes and functionality.</p>
-              <div>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!--[if lt IE 7]>
+      <p class="browsehappy">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="#">upgrade your browser</a> to improve your experience.
+      </p>
+    <![endif]-->
+    <div class="wrapper">
+      <h1>Trying to keep track of SVG sizing</h1>
+      <p>
+        Width and height are setting the size. The viewbox is setting the
+        starting point and the units. CX and CY are the center points of the
+        circle (in units) and R is the radius (in units).
+      </p>
+      <div class="example-container">
+        <div class="svg-box">
+          <svg
+            width="50"
+            height="50"
+            viewBox="0 0 100 100"
+            style="border: 1px solid black"
+          >
+            <circle cx="50" cy="50" r="25" fill="red" />
+          </svg>
+          <p>
+            Width: 50px<br />Height: 50px<br />VBox: 0 0 100 100<br />Cx: 50<br />Yx:
+            50<br />R: 25
+          </p>
+        </div>
+        <div class="svg-box">
+          <svg
+            width="100"
+            height="100"
+            viewBox="0 0 100 100"
+            style="border: 1px solid black"
+          >
+            <circle cx="50" cy="50" r="25" fill="red" />
+          </svg>
+          <p>
+            Width: 100px<br />Height: 100px<br />VBox: 0 0 100 100<br />Cx:
+            50<br />Yx: 50<br />R: 25
+          </p>
+        </div>
+        <div class="svg-box">
+          <svg
+            width="100"
+            height="100"
+            viewBox="0 0 50 50"
+            style="border: 1px solid black"
+          >
+            <circle cx="50" cy="50" r="25" fill="red" />
+          </svg>
+          <p>
+            Width: 100px<br />Height: 100px<br />VBox: 0 0 50 50<br />Cx: 50<br />Yx:
+            50<br />R: 25
+          </p>
+        </div>
+        <div class="svg-box">
+          <svg
+            width="100"
+            height="100"
+            viewBox="25 25 50 50"
+            style="border: 1px solid black"
+          >
+            <circle cx="50" cy="50" r="25" fill="red" />
+          </svg>
+          <p>
+            Width: 100px<br />Height: 100px<br />VBox: 25 25 50 50<br />Cx:
+            50<br />Yx: 50<br />R: 25
+          </p>
+        </div>
+        <p>
+          The following are borrowed from
+          <a href="https://codepen.io/HunorMarton/pen/PoGbgqj"
+            >Hunor Marton Borbely</a
+          >
+          to help understand SVG shapes and functionality.
+        </p>
+        <div>
           <svg width="200" height="200" viewBox="-100 -100 200 200">
-                <circle cx="0" cy="20" r="70" fill="red" />
-                <circle cx="0" cy="-75" r="12" fill="none" stroke="#C0C0C0" stroke-width="2" />
-                <rect x="-17.5" y="-65" width="35" height="20" fill="#C0C0C0" />
-              </svg>
-              <svg width="200" height="200" viewBox="-100 -100 200 200">
-                <polygon points="0,0 70,70 -70,70" fill="#234236" />
-                <polygon points="0,-40 55,30 -55,30" fill="#0c5c4c" />
-                <polygon points="0,-80 40,-10 -40,-10" fill="#387558" />
-                <rect x="-15" y="70" width="30" height="30" fill="brown" />
-              </svg>
-              
-              <!-- JS inside SVG example-->
-              <svg class="lights" width="400" height="200" viewBox="-200 -100 400 200" style="border: 1px solid red">
+            <circle cx="0" cy="20" r="70" fill="red" />
+            <circle
+              cx="0"
+              cy="-75"
+              r="12"
+              fill="none"
+              stroke="#C0C0C0"
+              stroke-width="2"
+            />
+            <rect x="-17.5" y="-65" width="35" height="20" fill="#C0C0C0" />
+          </svg>
+          <svg width="200" height="200" viewBox="-100 -100 200 200">
+            <polygon points="0,0 70,70 -70,70" fill="#234236" />
+            <polygon points="0,-40 55,30 -55,30" fill="#0c5c4c" />
+            <polygon points="0,-80 40,-10 -40,-10" fill="#387558" />
+            <rect x="-15" y="70" width="30" height="30" fill="brown" />
+          </svg>
+
+          <!-- JS inside SVG example-->
+          <svg
+            class="lights"
+            width="400"
+            height="200"
+            viewBox="-200 -100 400 200"
+            style="border: 1px solid red"
+          >
             <script>
-              window.addEventListener("DOMContentLoaded", () => {
-                const button = document.getElementById("button");
-                let lightsOn = false;
-                button.addEventListener("click", () => {
-                  const bulbs = document.querySelectorAll(".b");
-                  bulbs[0].setAttribute("fill", lightsOn ? "white" : "#FFC05B");
-                  bulbs[1].setAttribute("fill", lightsOn ? "white" : "#F86285");
-                  bulbs[2].setAttribute("fill", lightsOn ? "white" : "#03A8A8");
-                  bulbs[3].setAttribute("fill", lightsOn ? "white" : "#748CEF");
-                  lightsOn = !lightsOn;
-                });
-              });
+              window.addEventListener("DOMContentLoaded", () => { const button =
+              document.getElementById("button"); let lightsOn = false;
+              button.addEventListener("click", () => { const bulbs =
+              document.querySelectorAll(".b"); bulbs[0].setAttribute("fill",
+              lightsOn ? "white" : "#FFC05B"); bulbs[1].setAttribute("fill",
+              lightsOn ? "white" : "#F86285"); bulbs[2].setAttribute("fill",
+              lightsOn ? "white" : "#03A8A8"); bulbs[3].setAttribute("fill",
+              lightsOn ? "white" : "#748CEF"); lightsOn = !lightsOn; }); });
             </script>
-          
+
             <defs>
               <g id="bulb">
                 <path d="M 0,0 Q 20 25 0 40 Q -20 25 0 0" />
-                <rect x="-6" y="-1" width="12" height="10" rx="3" fill="#5F4C6C" />
+                <rect
+                  x="-6"
+                  y="-1"
+                  width="12"
+                  height="10"
+                  rx="3"
+                  fill="#5F4C6C"
+                />
               </g>
             </defs>
-          
+
             <path d="M -140 -60 Q -70 -50 0 -60 Q 110 -70 110 10" />
             <line x1="-70" y1="-15" x2="-70" y2="-55" />
             <line x1="30" y1="-25" x2="30" y2="-60" />
-            <use class="b" href="#bulb" x="-120" y="-45" transform="rotate(5)" />
+            <use
+              class="b"
+              href="#bulb"
+              x="-120"
+              y="-45"
+              transform="rotate(5)"
+            />
             <use class="b" href="#bulb" x="-70" y="-15" />
-            <use class="b" href="#bulb" x="-20" y="-57" transform="rotate(-5)" />
+            <use
+              class="b"
+              href="#bulb"
+              x="-20"
+              y="-57"
+              transform="rotate(-5)"
+            />
             <use class="b" href="#bulb" x="30" y="-25" />
-          
+
             <rect x="90" y="10" width="40" height="40" fill="lightgray" />
             <circle id="button" cx="110" cy="30" r="15" fill="red" />
           </svg>
-              </div>
-            </div>
-          </div>
-        
-        <script src="" async defer></script>
-    </body>
+        </div>
+      </div>
+    </div>
+
+    <script src="" async defer></script>
+  </body>
 </html>
