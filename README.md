@@ -1,7 +1,5 @@
 # svg-fun
 
-![svg-fun](./images/svg-fun.png)
-
 Just a quick, little showcase of SVG sizing, placement, and artwork.
 
 ## Technologies
@@ -9,3 +7,5 @@ Just a quick, little showcase of SVG sizing, placement, and artwork.
 - SVG
 - JS in SVG
 - SVG Art
+
+![svg-fun](./images/svg-fun.png)
